@@ -1,0 +1,111 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<!DOCTYPE html>
+<html class="no-js" lang="zxx" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>به لایت جیم خوش آمدید</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="~/favicon.ico" type="image/x-icon" />
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+    <!-- Ico Font CSS -->
+    <link href="~/Content/icofont.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <!-- Style CSS -->
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <!-- Responsive CSS -->
+    <link href="~/Content/responsive.css" rel="stylesheet" />
+    <link href="~/Content/rtl.css" rel="stylesheet" />
+    <link href="~/Content/font.css" rel="stylesheet" />
+    @RenderSection("Styles", required: false)
+</head>
+<body class="bg-img body-bg">
+
+    <div class="canvas-area">
+        <canvas class="constellation"></canvas>
+    </div>
+    <!-- PREALODER START -->
+    <div class="preloader-wrap">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- PREALODER END -->
+    <!-- SHAPE START -->
+    <div class="shape-1"><img src="~/Image/shape-1.png" alt="" /></div>
+    <div class="shape-2"><img src="~/Image/shape-2.png" alt="" /></div>
+    <div class="shape-3"><img src="~/Image/shape-3.png" alt="" /></div>
+    <!-- SHAPE END -->
+
+    <div class="bg-img color-white main-container">
+        <!-- HEADER PART START -->
+        <div id="header" class="style-1">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="https://lightcompany.ir/"><img src="~/Image/logo.png"  style="height: 50px;"/></a>
+                    <div class="head-contact-us"><a href="tel:01144446044">01144446044</a></div>
+                </nav>
+            </div>
+        </div>
+        <!-- HEADER PART END -->
+        <!-- BODY PART START -->
+        <div class="tab-content" id="pills-tabContent">
+            <!-- HOME PART -->
+            @RenderBody()
+        </div>
+        <!-- BODY PART END -->
+    </div>
+
+
+    <!-- SOCIAL ICON PART START -->
+    <div class="social-icon-box text-center">
+        <ul class="list-inline social-icons social-icons-body">
+            <li>
+                <a href="https://www.instagram.com/lightcompany.ir?igsh=eWV0OXptZmczMXpn" target="_blank" class=""><i class="icofont icofont-social-instagram"></i></a>
+            </li>
+            <li>
+                <a href="https://lightcompany.ir/" target="_blank" class=""><i class="icofont icofont-web"></i></a>
+            </li>
+            <li>
+                <a href="https://t.me/LightCoSupport" target="_blank" class=""><i class="icofont icofont-social-telegram"></i></a>
+            </li>
+        </ul>
+    </div>
+    <!-- SOCIAL ICON PART END -->
+    <!-- jQuery -->
+    <script src="~/Scripts/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!-- zepto JS -->
+    <script src="~/Scripts/zepto.min.js"></script>
+    <!-- constellation JS -->
+    <script src="~/Scripts/constellation.min.js"></script>
+    <!-- stars JS -->
+    <script src="~/Scripts/stars.js"></script>
+    <!-- scripts -->
+    <script src="~/Scripts/scripts.js"></script>
+    @RenderSection("Scripts", required: false)
+    <script>
+        $('.canvas-area canvas').constellation({
+            star: {
+                width: 3
+            },
+            line: {
+                color: 'rgba(255,255,255,0.7)'
+            },
+            length: (window.innerWidth / 9),
+            radius: (window.innerWidth / 5)
+        });
+    </script>
+</body>
+</html>

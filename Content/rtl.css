@@ -1,0 +1,77 @@
+*{
+    direction: rtl;
+}
+.form-inline .btn {
+    left: 4px;
+    right: unset!important;
+}
+.form-inline .form-control {
+    padding-right: 20px!important;
+    padding-left: 58px!important;
+}
+.nav-style2-main{
+    left: 0;
+    right: unset!important;
+}
+.style2-nav {
+    border-radius: 0 50px 50px 0 !important;
+}
+.style2-nav .bottom-line {
+    left: -15px;
+    right: unset!important;
+    border-radius: 0 50px 50px 0 !important;
+}
+.style2-nav .top-line {
+    left: -20px;
+    right: unset!important;
+    border-radius: 0 50px 50px 0 !important;
+}
+.social-icons-style2 {
+    border-radius: 50px 0 0 50px !important;
+}
+.social-icon-box-style2{
+    right: 0 !important;
+    left: unset!important;
+}
+.shape-4{
+    left: 0 !important;
+    right: unset!important;
+}
+.social-icons-style2 .bottom-line {
+    right: -10px;
+    left: unset!important;
+    border-radius: 50px 0 0 50px !important;
+}
+.social-icons-style2 .top-line{
+    right: -27px;
+    left: unset!important;
+    border-radius: 50px 0 0 50px !important;
+}
+.style2-nav {
+    padding: 10px 25px 10px 130px;
+}
+.social-icons-style2 {
+    padding: 10px 130px 10px 10px;
+}
+.col-sm-12.col-md-6.col-lg-6.col-xl-6 {
+    text-align: right;
+}
+.badge {
+    left: -75px !important;
+    right: unset!important;
+}
+.border-shape {
+    right: 25px !important;
+    left: unset!important;
+    border-radius: 25px 0 100px 0 !important;
+}
+#contact-form .error {
+    margin-right: 20px;
+    margin-left: unset!important;
+}
+
+
+
+
+
+
