@@ -199,6 +199,8 @@
     <Content Include="fonts\iran-yekan-700.woff2" />
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Scripts\constellation.min.js" />
+    <Content Include="Scripts\countdown.js" />
+    <Content Include="Scripts\countdown_api.js" />
     <Content Include="Scripts\jquery-3.2.1.min.js" />
     <Content Include="Scripts\jquery-3.7.1.js" />
     <Content Include="Scripts\jquery-3.7.1.min.js" />
